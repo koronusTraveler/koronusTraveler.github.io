@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Personal Webpage</title>
+    <!-- Link to CSS file-->
+    <link rel="stylesheet" type="text/css" href="webpage.css" />
+    <script src="webpageScripts.js"></script>
+
+</head>
+
+
+
+<body>
+    <!--Navigation bar with links to parts of the page.-->
+    <ul class="nav">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About Me">About Me</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+
+    <!-- Main body content of page where all information will be stored-->
+    <div class="content">
+        <div class="main">
+            <h1 style="font-size:30px">About Me</h1>
+
+            <p>
+                I'm David, a Junior at Texas A&M University Corpus Christi and aspiring cyber security specialist.
+                I live in Portland and am working my way through school. My current job is as a pizza delivery driver.
+                My Hobbies include playing table top games such as Dungeons and Dragons and Warhammer 40k.
+                I enjoy playing video games as well with my favorite genre being strategy games such as Crusader Kings II,
+                most of the Total War series, Dominions and Dwarf Fortress.
+            </p>
+            <p> Go ahead and add some games and their memes down below in the table.</p>
+            <!--Input section-->
+            Game:<input type="text" name="game" id="game" /><br /><br />
+            Meme:<input type="text" name="meme" id="meme" /><br /><br />
+            <button onclick="addRow();">Add Row</button>
+            <!--Table for Java script interaction with table rows-->
+            <table style="width:auto" border="1">
+                <tr>
+                    <th>Games</th>
+                    <th>Memes</th>
+
+                </tr>
+                <tr>
+                    <td>Crusader Kings</td>
+                    <td>Glitter Hoof</td>
+                </tr>
+                <tr>
+                    <td>Total War</td>
+                    <td>Bad A.i.</td>
+                </tr>
+                <tr>
+                    <td>Dwarf Fortress</td>
+                    <td>FUN</td>
+                </tr>
+                <tr>
+                    <td>Dominions</td>
+                    <td>Balanced Ermor</td>
+                </tr>
+                <tr>
+                    <td>D&D</td>
+                    <td>Grease Wizard</td>
+                </tr>
+
+
+            </table>
+
+            <!-- Skills section-->
+            <h3 style="font-size:30px">Skills</h3><a name="Skills"></a>
+            <p>
+                My technical skills are currently that I can operate and use Linux and windows systems proficiently.
+                I know C++, Java, and I'm learning HTML, Javascript, CSS and C#.
+            </p>
+            <!-- Contact section-->
+            <h3 style="font-size:30px">Contact</h3><a name="Contact"></a>
+            <p>
+                The easiest ways to reach me would be at my email dharmon@islander.tamucc.edu.
+                Or my Phone Number (361)816-3039.
+            </p>
+            <p> Here's a couple things I've made to show that I'm developing as a web programmer.</p>
+            <!--Random number generator that activates a link to a video-->
+            <h4> Cool Tunes</h4>
+            <button onclick="tunes()">Jam</button>
+            <!--skip line between buttons-->
+            <p></p>
+            <h5>Color Fun</h5>
+            <!--Button that will change the background color to a random color-->
+            <button onclick="changeColor()">Random Color Shift</button>
+
+        </div>
+    </div>
+    <!-- footer section-->
+    <footer class="footer"></footer>
+
+
+</body>
+
+
+
+    </html>
